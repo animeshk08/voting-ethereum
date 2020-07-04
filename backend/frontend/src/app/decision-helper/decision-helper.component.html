@@ -1,0 +1,18 @@
+<!-- <div class="title azuki" style="color:white;font-size: 3em">Every candidate of your constituency filed an RTI</div> -->
+
+<div class="columns">
+  <div class="column is-one-fourth">
+      <app-vote [decisionHelper]="'true'"></app-vote>
+  </div>
+  <div class="column">
+    <div style="margin-right:5em;margin-top: 13em">
+      <div class="white-text">
+        <div *ngFor="let data of rtiData">
+          <div class="title azuki" style="color:white;font-size: 5em">{{data.title}}</div>
+          <div class="azuki" style="color:white;font-size: 2em">{{data.desc}}</div><br>
+          <a class="mbtn white-text"  href="https://www.mea.gov.in/Images/amb1/Amit_21_dec_2018.pdf" target="_blank" style="font-size:1.5em">View RTI Pdf</a><br><br><br>
+        </div>  
+      </div> 
+    </div>   
+  </div>
+</div>

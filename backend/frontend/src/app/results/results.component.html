@@ -1,0 +1,63 @@
+<ngx-ui-loader></ngx-ui-loader>
+<div ngxUiLoaderBlurred>
+  <app-background></app-background>
+
+  <div class="title has-margin-5 azuki" style="font-size:5em;margin-top: 1em;margin-left: 1em; color:black"> Results</div>
+
+<section>
+    <!-- <div class="hero-body">
+          <div class="columns ">
+            <div class="column wd-left">
+              <section class="hero has-background-white">
+                <div class="hero-body">
+                  <div class="container">
+                    <h1 class="title has-text-centered">
+                      Constituency Wise Results
+                    </h1>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="column wd-right">
+              <section class="hero has-background-white">
+                <div class="hero-body">
+                  <div class="container">
+                    <h1 class="title has-text-centered">
+                      Overall Results
+                    </h1>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+    </div> -->
+          <!-- here goes the actual results -->
+          <div>
+              
+              <div style="margin-top:-10em" class="category-list events-listing row active azuki">
+                  <div class="col s12 m4" *ngFor="let item of resultData; let i = index">
+                    <a  (click)="vote(item)" class="events-listing-item" >
+                      <div class="image" [ngStyle]="{ 'background-image': 'url('+ domain + item.party_symbol + ')'}">
+                        <div class="rank" style="font-size:4em">{{i+1}}<sup>{{superscript[i]}}</sup></div>
+                      </div>
+                      <div class="title nunito has-text-centered">{{ item.party }}</div>
+                    </a>
+                    <a  (click)="vote(item)" class="events-listing-item" >
+                        <!-- <div class="image" [ngStyle]="{ 'background-image': 'url('+ domain + item.party_symbol + ')'}"></div> -->
+                        <div class="title nunito has-text-centered" >votes : {{item.vote_count}}</div>
+                    </a>
+                    <a  (click)="vote(item)" class="events-listing-item" >
+                        <div class="image" [ngStyle]="{ 'background-image': 'url('+ domain + item.avatar + ')'}"></div>
+                        <!-- <div class="title">{{ item.party }}</div> -->
+                    </a><br><br><br><br>{{count}}
+                  </div>
+              </div>
+                
+
+          </div>  
+          <a class="mbtn" routerLink="/dashboard" style="margin-left: 5em;color: white;margin-top: -10em">Dashboard</a>
+
+</section>
+
+
+</div>

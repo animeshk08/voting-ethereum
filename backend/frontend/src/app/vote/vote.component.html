@@ -1,0 +1,41 @@
+<ngx-ui-loader></ngx-ui-loader>
+<div ngxUiLoaderBlurred>
+
+<app-background></app-background>
+
+<div *ngIf="!decisionHelper">
+    <div class="title azuki" style="color:black;font-size: 5em;margin-top: 1em;margin-left: 2em">Cast Your Vote Here</div>
+
+  <div class="category-list events-listing row active azuki" style="margin-top:-10em">
+    <div class="col s12 m4" *ngFor="let item of categories">
+      <a  class="events-listing-item" 
+      [swal]="{
+        title: 'Are you sure you want to vote for the selected party',
+        text: '',
+        type: 'info',
+        showCancelButton: 'true',
+        focusCancel: 'true',
+        confirmButtonText: 'Yes, I am sure.',
+        cancelButtonText: 'Wait!'
+        }" (confirm)="vote(item)">
+
+        <div class="image" [ngStyle]="{ 'background-image': 'url('+ domain + item.party_symbol + ')'}"></div>
+        <div class="title nunito has-text-centered">{{ item.party }}</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="decisionHelper">
+    <div class="category-list events-listing row active azuki" style="width:80%">
+        <div  *ngFor="let item of categories">
+          <a  class="events-listing-item">
+            <div class="image" [ngStyle]="{ 'background-image': 'url('+ domain + item.party_symbol + ')'}"></div>
+            <div class="title nunito has-text-centered">{{ item.party }}</div>
+          </a>
+        </div>
+      </div>
+</div>  
+
+</div>
+

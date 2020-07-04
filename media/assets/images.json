@@ -1,0 +1,124 @@
+{
+    "projects": {
+      "django": [
+        {
+          "name": "Share NITK",
+          "hash": "kite",
+          "desc": "The project is something I am very proud of. This is from some very early days of mine with Django. I developed this for recruitment of Web Enthusiasts` club NITK and voila I made into the club. <br>",
+          "url": "http://mananp.pythonanywhere.com/pastebin/",
+          "code": "https://github.com/mananpoddar/pastebin_syntax"
+        },
+        {
+          "name": "Event Manager",
+          "hash": "informalz",
+          "desc": " I joined IEEE summer Internship, there I met Mahim Agrawal, one of my senior. I feel lucky that I met him .He was my first mentor and I learned a lot from him. This project was for removing the hastle of whatsApp spam messages in the college so that students can get hastle free information about club events.",
+          "url":"http://mananp.pythonanywhere.com/polls/main_page/",
+          "code":"https://github.com/mananpoddar/managing-events"
+        },
+        {
+          "name": "Microsoft Codefundo",
+          "hash": "Unplugged",
+          "desc": " The project was developed for Microsoft Codefundo with one of my friend Shashank Jaiswal. A great experience where I realized that I enjoy Hackathons, developing something for long continous hours is fun.",
+          "url": "http://mananp.pythonanywhere.com/codefundo/main_page/",
+          "code": "https://github.com/mananpoddar/codefundo_2k18",
+          "team" : "Shashank Jaiswal"
+        },
+        {
+          "name": "Online Treasure Hunt - ISTE NITK",
+          "hash": "Pulse",
+          "desc": " I with one of my senior developed an application for online treasure hunt as a part of ISTE, which almost 40 students of first years played.This was the second time when I was enjoying the traffic at something.I developed. The first one being the pastebin which lot of my friends used to copy the code in our regular lab. Repo is private but I can share the code if you are interested.",
+          "url": "http://mananm.pythonanywhere.com/login/",
+          "team": "Mohit Bhasi - (SIG Head at computer society, ISTE NITK)"
+        }
+      ],
+      "angular": [
+        {
+          "name": "INCIDENT - 2019 --- Cultural Fest NITK",
+          "hash": "Unplugged",
+          "desc": " The project was developed for Cultural Fest of NITK-2019. Organising data within HTML pages can be hectic sometimes, therefore use JSON Instead with the structure of Angular.Also, I am pretty sure, you cannot imagine yourself writing plane js in the world of animations as well:P.",
+          "url": "https://mananpoddar.github.io/Incident2019/index.html",
+          "code": "https://github.com/mananpoddar/Incident2019",
+          "team" : "With my favourite Senior, hrily.github.io . He did the major work,XD :P .Please go and check out his work, It's amazing. Also I should not forget members of web club"
+        },
+        {
+          "name": "Personal Website",
+          "hash": "Pulse",
+          "desc": " The website you are seeing is on Angular, Hope you like it",
+          "url": "https://mananpoddar.github.io",
+          "code":"https://github.com/mananpoddar/mananpoddar.github.io"
+        }
+      ],
+      "machine_learning": [
+        {
+          "name": "Image Caption Generation",
+          "hash": "Tandav",
+          "desc": "Given an image, application generates Caption. Worked mostly with the UI ",
+          "code": "https://github.com/mananpoddar/Image-Caption-Generation",
+          "team": "Part of ISTE Annual Club project"
+        },
+        {
+          "name": "Deep Learning Specialization by Andrew Ng (1st course)",
+          "hash": "Promenade",
+          "desc": "Learned to code Neural Networks from Scratch",
+          "url": "https://www.coursera.org/account/accomplishments/verify/LMS6E755EDJ5"
+        }
+      ],
+      "android": [
+        {
+          "name": "Labour On Demand",
+          "hash": "General_Quiz",
+          "desc": "To help the working staff for example, Carpenter, plumber etc. We made a platform to connect the employer with them.",
+          "code": "https://github.com/mananpoddar/LabourOnDemand",
+          "team": "As a part of software engineering lab project in team of 6"
+        }
+      ],
+      "mean": [
+        {
+          "name": "Frontend on Angular && Django on Backend",
+          "hash": "mock_stock",
+          "desc": "Currently Working With the FOSSEE Team to develop this application, I now understand the real meaning of frontend and backend frameworks. Also, Now I understand how API works and with the help of it, we can use backend and frontend frameworks together.",
+          "code": "https://github.com/fresearchgroup/spoken-website/tree/scripts"
+        }
+      ],
+      "open_source": [
+        {
+          "name": "FOSSEE- Spoken Tutorials",
+          "hash": "need_for_speed",
+          "desc": "Feeling of contributing to open source can be understood when you use a github solutions written by someone else with a great ease without having a panick attack::XD"
+        }
+      ]
+    },
+    "categories": [
+      {
+        "name": "Django",
+        "image": "django.png",
+        "hash": "django"
+      },
+      {
+        "name": "Angular",
+        "image": "angular.png",
+        "hash": "angular"
+      },
+      {
+        "name": "Machine Learning",
+        "image": "ml.jpg",
+        "hash": "machine_learning"
+      },
+      {
+        "name": "Android",
+        "image": "android.jpg",
+        "hash": "android"
+      },
+      {
+        "name": "MEAN",
+        "image": "mean.jpg",
+        "hash": "mean"
+      },
+      {
+        "name": "Open Source Contributions",
+        "image": "opensource.jpg",
+        "hash": "open_source"
+      }
+    ]
+  }
+  

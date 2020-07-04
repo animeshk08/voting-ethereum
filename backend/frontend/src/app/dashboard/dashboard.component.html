@@ -1,0 +1,274 @@
+<ngx-ui-loader></ngx-ui-loader>
+<app-background></app-background>
+
+<div ngxUiLoaderBlurred>
+  <section class="hero ">
+    <div class="hero-body">
+      <div class="is-fluid">
+        <h1 class="title azuki" style="font-size:3.5em;color: black;margin-top:16px">
+          Secure Electronic Voting using Azure Blockchain
+        </h1>
+      </div>
+    </div>
+  </section>
+  <!-- <div class="columns ">
+    <div class="column wd-left">
+      <section class="hero has-background-white special">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              <a routerLink="/elections/upcoming">Upcoming Elections</a>
+            </h1>
+            <h2 class="subtitle">
+              Glance all the upcoming election in your locality
+            </h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="column wd-right">
+      <section class="hero has-background-white special">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              <a routerLink="/elections/past">Past Elections</a>
+            </h1>
+            <h2 class="subtitle">
+              Glance results of all the past elections in your locality
+            </h2>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div> -->
+
+  <div class="tile is-ancestor " style="margin-top:15px">
+    <div class="tile is-parent wd-left">
+      <div class="tile is-child notification  has-text-centered leftPerpule special">
+        <div style="margin-top:40px">
+        <h1 class="title has-text-white-bis nunito">Reference Number</h1>
+        <p class="round-border has-text-white-bis">{{userKey}}</p><br><br>
+
+        <a class="round-border has-text-white-bis"  routerLink="/elections/upcoming" style="text-decoration:none;padding:20px;display:inline-block; margin-bottom: 10px" >upcoming elections</a><br>
+      
+        <a class="round-border has-text-white-bis"  routerLink="/elections/past" style="text-decoration:none;padding:20px;display:inline-block;margin-top: 30px" >Past elections</a><br>
+        <br><br>
+
+        <p class="wd-top-extra is-spaced title is-3 has-text-centered has-text-white-bis nunito">Address</p>
+        <p class="wd-top-extra subtitle is-4 is-spaced has-text-centered has-text-white-bis nunito">{{aadhar.address}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification purplee special">
+          <img src='{{staticDomain}}/{{staticPhone}}' class="card-img">
+          <p class="wd-top card-key has-text-centered has-text-white-bis nunito">Phone Number</p>
+          <p class="wd-top card-value has-text-centered has-text-white-bis">{{aadhar.mobile_num}}</p>
+        </article>
+
+        <article class="tile is-child notification orange special">
+          <img src='{{staticDomain}}/{{staticAadhar}}' class="card-img">
+          <p class="wd-top card-key has-text-centered has-text-white-bis nunito">Aadhar</p>
+          <p class="wd-top card-value has-text-centered has-text-white-bis nunito">{{aadhar.aadhar_num}}</p>
+        </article>
+      </div>
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification greene special">
+          <img src='{{staticDomain}}/{{staticAge}}' class="card-img">
+          <p class="wd-top card-key has-text-centered has-text-white-bis nunito">Age</p>
+          <p class="wd-top card-value has-text-centered has-text-white-bis nunito">{{aadhar.age}}</p>
+        </article>
+        <article class="tile is-child notification red special">
+          <img src='{{staticDomain}}/{{staticGender}}'class="card-img">
+          <p class="wd-top card-key has-text-centered has-text-white-bis nunito">Gender</p>
+          <p class="wd-top card-value has-text-centered has-text-white-bis nunito">{{aadhar.gender}}</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="tile is-parent wd-right">
+      <div class="tile is-child notification rightPerpule is-bold special">
+        <img src={{domain}}{{aadhar.avatar}} width="250px" height="250px" style="width:250px;height:250px" class="card-img-large">
+        <p class="wd-top title is-3 has-text-centered has-text-white-bis nunito">Name</p>
+        <p class="subtitle is-4 is-spaced has-text-centered has-text-white-bis nunito">{{aadhar.name}}</p>
+        <p class="title is-3 has-text-centered has-text-white-bis nunito">Constituency</p>
+        <p class="subtitle is-4 is-spaced has-text-centered has-text-white-bis nunito">Vadodara</p>
+        <p class="title is-3 has-text-centered has-text-white-bis nunito">Pincode</p>
+        <p class="subtitle is-4 is-spaced has-text-centered has-text-white-bis nunito">{{aadhar.pincode}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--<ngx-ui-loader></ngx-ui-loader>
+<div ngxUiLoaderBlurred>
+    <div class="container" style="margin-top:6em">
+        <div class="columns">
+            <div class="column is-3 ">
+                <aside class="menu is-hidden-mobile">
+                    <p class="menu-label">
+                        General
+                    </p>
+                    <ul class="menu-list">
+                        <li><a class="is-active">Dashboard</a></li>
+                        <li><a>My Info</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Elections
+                    </p>
+                    <ul class="menu-list">
+                        <li><a routerLink="/elections/upcoming">Upcoming Elections</a></li>
+                        <li>
+                            <a routerLink="/elections/past">Past Elections</a>
+                            &lt;!&ndash; <ul>
+                                <li><a>Members</a></li>
+                                <li><a>Plugins</a></li>
+                                <li><a>Add a member</a></li>
+                            </ul> &ndash;&gt;
+                        </li>
+                        &lt;!&ndash; <li><a>Invitations</a></li>
+                        <li><a>Cloud Storage Environment Settings</a></li>
+                        <li><a>Authentication</a></li> &ndash;&gt;
+                    </ul>
+                    &lt;!&ndash; <p class="menu-label">
+                        Transactions
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Payments</a></li>
+                        <li><a>Transfers</a></li>
+                        <li><a>Balance</a></li>
+                    </ul> &ndash;&gt;
+                </aside>
+            </div>
+            <div class="column is-9">
+                &lt;!&ndash; <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="../">Bulma</a></li>
+                        <li><a href="../">Templates</a></li>
+                        <li><a href="../">Examples</a></li>
+                        <li class="is-active"><a href="#" aria-current="page">Admin</a></li>
+                    </ul>
+                </nav> &ndash;&gt;
+                <section class="hero is-info welcome is-small">
+                    <div class="hero-body">
+                        <div class="container">
+                            <h1 class="title">
+                                Hello, {{aadhar.name}}.
+                            </h1>
+                            <h2 class="subtitle">
+                                I hope you are having a great day!
+                            </h2>
+                        </div>
+                    </div>
+                </section>
+                <section class="info-tiles">
+                    <div class="tile is-ancestor has-text-centered">
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">{{aadhar.age}}</p>
+                                <p class="subtitle">age</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">{{aadhar.gender}}</p>
+                                <p class="subtitle">gender</p>
+                            </article>
+                        </div>
+                        &lt;!&ndash; <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">3.4k</p>
+                                <p class="subtitle">Open Orders</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">19</p>
+                                <p class="subtitle">Exceptions</p>
+                            </article>
+                        </div> &ndash;&gt;
+                    </div>
+                </section>
+                <div class="columns">
+                    <div class="column is-6">
+                        <div class="card events-card">
+                            <header class="card-header">
+                                <p class="card-header-title is-size-1">
+                                    Aadhar Info
+                                </p>
+                                &lt;!&ndash; <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </a> &ndash;&gt;
+                            </header>
+                            <div class="card-table" style="margin-left:1em">
+                                <div class="content" style="font-size: 2em;">
+                                    <div> pincode : {{aadhar.pincode}}</div>
+                                    <div> address : {{aadhar.address}}</div>
+                                    <div> aadhar no : {{aadhar.aadhar_num}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Reference Number
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </a>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-large" type="text" placeholder="">
+                                        <span class="icon is-medium is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                                        <span class="icon is-medium is-right">
+                      <i class="fa fa-check"></i>
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Constituency
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </a>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-large" type="text" placeholder="">
+                                        <span class="icon is-medium is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                                        <span class="icon is-medium is-right">
+                      <i class="fa fa-check"></i>
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->

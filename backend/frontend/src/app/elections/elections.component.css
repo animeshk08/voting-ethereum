@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+/* @import "~angular-vertical-timeline/dist/vertical-timeline.css"; */
+
+.azuki {
+    font-family: 'Azuki', sans-serif;
+}
+
+.monserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.azure-white {
+    background-color: rgba(220, 243, 238, 0.78);
+}
+
+@font-face {
+    font-family: 'Azuki';
+    src: url('../../assets/fonts/azuki-regular.ttf')  format('truetype');
+}
+
+body {
+    font-size: 1em;
+    background-color: #F8F8FF;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.azuki {
+    font-family: 'Azuki', sans-serif;
+}
+
+.monserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.azure-white {
+    background-color: rgba(220, 243, 238, 0.78);
+}
+
+.blood-liver {
+    background-color: rgba(85, 76, 84, 0.78);
+}
+
+.iblue {
+    background-color: rgba(137, 218, 228, 0.78);
+}
+
+.blue-yonder {
+    background-color: rgba(93, 117, 153, 0.78);
+}
+
+.burgundy {
+    background-color: rgba(64, 47, 72, 0.78);
+}
+
+.charleston-green {
+    background-color: rgba(36, 51, 47, 0.78);
+}
+
+.ired {
+    background-color: rgba(191, 62, 75, 0.78);
+}
+
+.igreen {
+    background-color: rgba(142, 228, 157, 0.78);
+}
+
+.japanese-violet {
+    background-color: rgba(62, 51, 86, 0.78);
+}
+
+.pastel-grey {
+    background-color: rgba(210, 211, 199, 0.78);
+}
+
+.desire {
+    background-color: rgba(219, 73, 72, 0.78);
+}
+
+.straw {
+    background-color: rgba(218, 205, 127, 0.78);
+}
+
+.vermilion {
+    background-color: rgba(204, 132, 86, 0.78);
+}
+
+.iorange {
+    background-color: rgba(255, 154, 3, 0.78);
+}
+
+.mcontainer {
+    margin-left: 176px;
+    margin-right: 176px;
+    width: calc(100% - 352px);
+}
+
+.page-container {
+    padding-left: 9vw;
+    padding-right: 9vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page-container .page-content {
+    min-height: calc(100vh - 2*101px);
+}
+
+.row, .col {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.rounded-image {
+    border-radius: 36px;
+}
+
+.mbtn {
+    display: inline-block;
+    background: black;
+    border: 1px solid black;
+    padding: 16px 32px 16px 32px;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 32px;
+    cursor: pointer;
+    font-family: 'Azuki', sans-serif;
+}
+
+.mbtn.mbtn-white {
+    border: 1px solid white;
+}
+
+.mbtn:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  border-radius: 32px;
+}
+
+.time-left {
+  display: inline-block;
+  background: black;
+  border: 1px solid black;
+  padding: 16px 32px 16px 32px;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 32px;
+  font-family: 'Azuki', sans-serif;
+}
+
+.white-text{
+    color:white;
+}
+
+.mbtn.mbtn-white:hover {
+    background: white;
+    color: black;
+}
+
+.back-circle {
+    position: absolute;
+    top: -600px;
+    left: -500px;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.page-title {
+    padding: 120px 0 16px 0 !important;
+    margin: 0 !important;
+    font-size: 8em;
+    line-height: 1em;
+    font-family: 'Azuki', sans-serif;
+}
+
+.nav-top, .nav-down {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-top i, .nav-down i {
+    font-size: 96px;
+}
+
+/* Hack - Angular doesn't support styling for dynamically added html */
+.events-listing a .icon *, .events-listing a .icon img {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.events-listing a .icon i {
+    font-size: 6em;
+}
+
+
+/* ****** */
+/* FOOTER */
+/* ****** */
+
+/* Mac Pro 13in */
+@media only screen and (min-width: 1400px) and (min-resolution: 96dpi) {
+    body, html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+body {
+    font-size: 14px;
+}
+
+.mcontainer {
+    margin-left: 152px;
+    margin-right: 152px;
+    width: calc(100% - 304px);
+}
+
+.page-title {
+    font-size: 5em;
+    padding-top: 48px !important;
+}
+
+.nav-top i, .nav-down i {
+    font-size: 78px !important;
+}
+
+.page-container .page-content {
+    min-height: calc(100vh - 2*84px);
+}
+
+.back-circle {
+    top: -400px;
+    left: -250px;
+    height: 700px;
+    width: 700px;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+.mcontainer {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc(100% - 32px);
+}
+
+.back-circle {
+    top: -90vw;
+    left: -70vw;
+    height: 150vw;
+    width: 150vw;
+}
+
+.page-title {
+    margin: 25vw 16px 16px 12px;
+    font-size: 4em;
+}
+
+.page-container .page-content {
+    min-height: calc(100vh - 2*84px - 54px);
+}
+
+.rounded-image {
+    border-radius: 24px;
+}
+
+.mbtn {
+    display: block;
+}
+
+}
+
+
+.back-link {
+    opacity: 0;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: opacity 300ms ease-out;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.events-listing {
+    width: 80%;
+    padding: 9vw;
+    display: none;
+    transition: opacity 300ms ease-out;
+}
+
+.events-listing.active {
+    display: block;
+}
+
+.events-listing .col {
+    padding: 10px !important;
+}
+
+.events-listing .events-listing-item {
+    display: flex;
+    margin-top: 20px !important;
+    border-radius: 16px;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+    background: white;
+}
+
+.events-listing .events-listing-item .image {
+    width: 80%;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url('http://localhost:8000/media/images/divya.png'); */
+}
+
+.events-listing .events-listing-item .icon *, .events-listing .events-listing-item .icon img {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.events-listing .events-listing-item .icon i {
+    font-size: 6em;
+}
+
+.events-listing .events-listing-item .title {
+    font-size: 2.4em;
+    padding: 6px 16px 6px 16px;
+    color: #063862;
+}
+
+.events-listing .events-listing-item:hover {
+    background-color: rgb(255, 255, 255, 0.5)
+}
+
+.events-listing .row .title {
+    font-size: 3em;
+}
+
+.events-listing .row .col {
+    text-align: left;
+    font-size: 1.6em;
+}
+
+.events-listing .row {
+    display: flex;
+    margin-top: 48px !important;
+}
+
+.events-listing .row:nth-child(2n+1) {
+    direction: rtl;
+}
+
+.events-listing .row .col img {
+    width: 80%;
+    border-radius: 16px;
+}
+
+.events-listing .events-page-desc {
+    padding-top: 32px;
+    font-size: 1.8em;
+}
+
+.events-listing .ltr {
+    direction: ltr;
+}
+
+.events-listing iframe {
+    width: 100%;
+    min-height: calc( 0.5625 * (100vw - 2*9vw) * (4/12) );
+}
+
+@media only screen and (max-width: 1400px) {
+
+.back-link {
+    font-size: 1.2em;
+}
+
+.events-listing .events-listing-item .image {
+    height: 240px;
+}
+
+.events-listing .events-page-desc {
+    font-size: 1.4em;
+}
+
+.events-listing .row .col {
+    font-size: 1.2em;
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+.events-listing {
+    width: 100%;
+}
+
+.events-listing .col {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.events-listing .row {
+    display: block;
+}
+
+.events-stay-tuned div {
+    height: 600px;
+}
+
+.events-listing iframe {
+    padding-top: 16px;
+    min-height: calc( 0.5625 * (100vw - 2*9vw) * (12/12) )
+}
+
+}

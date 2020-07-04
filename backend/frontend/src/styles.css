@@ -1,0 +1,61 @@
+
+.mbtn {
+    display: inline-block;
+    background: black;
+    border: 1px solid black;
+    padding: 16px 32px 16px 32px;
+    font-size: 1em;
+    color: black;
+    border-radius: 32px;
+    cursor: pointer;
+    font-family: 'Azuki', sans-serif;
+}
+
+.mbtn.mbtn-white {
+    border: 1px solid white;
+    color: white;
+    background:black;
+}
+
+.mbtn:hover {
+    background: black;
+    color: white;
+}
+.white-text{
+    color:white;
+}
+
+.mbtn.mbtn-white:hover {
+    background: white;
+    color: black;
+}
+
+.nunito{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.azuki {
+    font-family: 'Azuki', sans-serif;
+}
+
+.monserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.azure-white {
+    background-color: rgba(220, 243, 238, 0.78);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+/* @import "~angular-vertical-timeline/dist/vertical-timeline.css"; */
+
+@font-face {
+    font-family: 'Azuki';
+    src: url('./assets/fonts/azuki-regular.ttf')  format('truetype');
+}
+
+
+.azuki {
+    font-family: 'Azuki', sans-serif;
+}

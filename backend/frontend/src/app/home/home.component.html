@@ -1,0 +1,62 @@
+<ngx-ui-loader></ngx-ui-loader>
+
+<div ngxUiLoaderBlurred>
+ <section class="login is-fullheight">
+      <div class="login-body">
+        <div class="container v-middle">
+          <div class="columns login-page">
+              <div class="column is-5 login-sidebar is-hidden-mobile" [ngStyle]="{ 'background-image': 'url('+ staticDomain + staticHome + ')'}" >
+                <div class="login-gradient-background">
+                  <h1></h1>
+                </div>
+              </div>
+              <div class="column is-7 login-form-wrapper">
+                <!-- <div class="column is-12 has-text-right register-btn">
+                  <a class="btn" name="button">Helpline</a>
+                </div> -->
+                <div class="column is-12 field-box">
+                  <div class="column is-7 is-offset-1">
+                    <h1 class="login-heading nunito">Vote for Better India</h1>
+                    <p class="login-subheading nunito">Government of India</p>
+              
+                      <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                          <input class="input is-medium" type="email" placeholder="Enter your mobile number" (keyup)="onEnterMobNo($event)">
+                          <span class="icon is-medium is-left">
+                            <i class="fa fa-envelope"></i>
+                          </span>
+                          <span class="icon is-small is-right">
+                            <i class="fa fa-check"></i>
+                          </span>
+                        </p>
+                      </div>
+                
+                      <div class="field is-grouped is-grouped-centered login-btn-group">
+                        <p class="control">
+                                <a class="login-btn" [swal]="{
+                                    title: 'Keep Your Fingers at Your Phone',
+                                    text: 'open Your E-Vote App and keep your fingers at your phone similar to when you unlock your phone?',
+                                    type: 'info',
+                                    showCancelButton: 'true',
+                                    focusCancel: 'true',
+                                    confirmButtonText: 'Done, log me in',
+                                    cancelButtonText: 'Wait!'
+                                    }" (confirm)="getId()">
+                                    LOG IN
+                                  </a>
+                        </p>
+                       
+                      </div>
+               
+                  </div>
+                </div>
+              </div>
+              <!-- is-8 ends -->
+          </div>
+        </div>
+        <!-- div.container ends -->
+      </div>
+  </section>
+
+</div>
+

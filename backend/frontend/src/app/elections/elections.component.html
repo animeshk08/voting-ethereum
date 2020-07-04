@@ -1,0 +1,68 @@
+<app-background></app-background>
+<ngx-ui-loader></ngx-ui-loader>
+
+<div ngxUiLoaderBlurred>
+<!-- 
+  <script>
+      let x = setInterval(function () {
+          let startDate = new Date(election.start_date).getTime();
+          let currentTime = new Date().getTime();
+          let distance = startDate - currentTime;
+          console.log(distance);
+          let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("time").innerHTML = days+"d "+hours+"h "+minutes+"m "+seconds + "s ";
+          console.log(days+"d "+hours+"h "+minutes+"m "+seconds + "s ")
+      }, 1000);
+
+      console.log('Aee Manan');
+  </script> -->
+
+<div style="margin:5em">
+
+<div *ngIf="upcomingOrpast=='upcoming'">
+  <div class="title has-margin-5 azuki" style="font-size:5em; color:black"> Upcoming Election</div>
+</div>
+
+<div *ngIf="upcomingOrpast=='past'">
+<div class="title has-margin-5"> Past Election</div>
+</div>
+
+<!-- <div class="title azuki" style="color:white;font-size: 3em">Every candidate of your constituency filed an RTI</div> -->
+
+<div style="margin-top:5em">
+
+
+    <div>
+      <div class="white-text">
+
+        <div *ngIf="upcomingOrpast=='upcoming'">
+          <div *ngFor="let election of elections">
+
+            <div class="title azuki" style="color:black;font-size: 4em">{{election.name}}</div>
+            <div class="azuki" style="color:black;font-size: 2em">{{election.description}}</div><br>
+            <a class="mbtn" (click)="onSelectElectionId(election.id)" >parties available to vote</a>
+            <a class="mbtn" routerLink="/decisionHelper" target="_blank" style="margin-left: 1em">decision helper</a>
+            <div id="time" class="time-left" style="margin-left: 1em">Time Left : {{time}}</div><br><br><br>
+          </div>
+        </div>
+
+        <div *ngIf="upcomingOrpast=='past'">
+           
+  
+              <div class="title azuki" style="color:black;font-size: 4em">Lok Sabha Elections 2019</div>
+              <div class="azuki" style="color:black;font-size: 2em">This is the upcoming election for the largest democracy in the world. The lok sabha election is the general election where the Indian democracy chooses its next ruling party.</div><br>
+              <a class="mbtn" routerLink="/results" style="margin-left: 1em">See Results</a>
+             
+           
+        </div>
+
+      </div>
+    </div>
+
+</div>
+</div>
+</div>

@@ -1,0 +1,27 @@
+
+{% load static %}
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Microsoft Codefundo</title>
+<base href="/codefundo">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="{% static 'codefundo/styles.css' %}">
+</head>
+
+<body>
+  
+    <app-root></app-root>
+
+<script type="text/javascript" src="{% static 'codefundo/runtime.js' %}""></script>
+<script type="text/javascript" src="{% static 'codefundo/es2015-polyfills.js' %}""></script>
+<script type="text/javascript" src="{% static 'codefundo/polyfills.js' %}""></script>
+<script type="text/javascript" src="{% static 'codefundo/main.js' %}""></script>
+
+</body>
+</html>
