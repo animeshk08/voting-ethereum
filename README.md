@@ -1,4 +1,3 @@
-# codefundo2k19
 
 ## Secure voting using blockchain
 
